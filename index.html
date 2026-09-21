@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>72 Outfit | Premium Fashion</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #111;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 22px 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: 3px;
+}
+
+header p {
+    margin: 7px 0 0;
+    color: #ccc;
+}
+
+nav {
+    background: white;
+    padding: 16px 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    color: #111;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.hero {
+    background: #e8e8e8;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin: 0 0 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.shop-button {
+    display: inline-block;
+    background: #111;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.products {
+    padding: 45px 15px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: white;
+    width: 280px;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+}
+
+.product-image {
+    width: 100%;
+    height: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product h3 {
+    margin: 16px 0 8px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buy-button {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.popup-box {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.popup-box h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.selected-product {
+    text-align: center;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 80px;
+    resize: none;
+}
+
+.whatsapp-button {
+    width: 100%;
+    padding: 14px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button {
+    width: 100%;
+    padding: 12px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 20px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>72 OUTFIT</h1>
+
+<p>Premium Fashion</p>
+
+</header>
+
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#collection">Men</a>
+<a href="#collection">Women</a>
+<a href="#collection">Collection</a>
+<a href="#footer">Contact</a>
+
+</nav>
+
+
+<section class="hero">
+
+<h2>Style That Speaks</h2>
+
+<p>Discover your perfect outfit.</p>
+
+<a href="#collection" class="shop-button">
+Shop Now
+</a>
+
+</section>
+
+
+<section class="products" id="collection">
+
+<h2>Our Collection</h2>
+
+
+<div class="product-container">
+
+
+<!-- PRODUCT 1 -->
+
+<div class="product">
+
+<div class="product-image">
+
+<img
+src="fresh_collection_karnal__20260921_110221_334.jpg"
+alt="Classic T-Shirt">
+
+</div>
+
+<h3>Classic T-Shirt</h3>
+
+<p class="price">₹499</p>
+
+<button
+class="buy-button"
+onclick="openOrderForm('Classic T-Shirt',499)">
+
+Buy Now
+
+</button>
+
+</div>
+
+
+
+<!-- PRODUCT 2 -->
+
+<div class="product">
+
+<div class="product-image">
+
+<img
+src="sai_collection.1_20260921_111416_700.jpg"
+alt="Premium Shirt">
+
+</div>
+
+<h3>Premium Shirt</h3>
+
+<p class="price">₹799</p>
+
+<button
+class="buy-button"
+onclick="openOrderForm('Premium Shirt',799)">
+
+Buy Now
+
+</button>
+
+</div>
+
+
+
+<!-- PRODUCT 3 -->
+
+<div class="product">
+
+<div class="product-image">
+
+<img
+src="hitesh_collection__20260921_111257_465.jpg"
+alt="Stylish Jeans">
+
+</div>
+
+<h3>Stylish Jeans</h3>
+
+<p class="price">₹999</p>
+
+<button
+class="buy-button"
+onclick="openOrderForm('Stylish Jeans',999)">
+
+Buy Now
+
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ORDER FORM -->
+
+<div class="popup" id="orderPopup">
+
+<div class="popup-box">
+
+<h3>🛍️ Place Your Order</h3>
+
+
+<div class="selected-product">
+
+<b id="selectedProduct"></b>
+
+<br>
+
+₹<span id="selectedPrice"></span>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Your Name</label>
+
+<input
+type="text"
+id="customerName"
+placeholder="Apna naam likhein">
+
+</div>
+
+
+<div class="form-group">
+
+<label>Mobile Number</label>
+
+<input
+type="tel"
+id="customerMobile"
+placeholder="10 digit mobile number">
+
+</div>
+
+
+<div class="form-group">
+
+<label>Address</label>
+
+<textarea
+id="customerAddress"
+placeholder="Delivery address likhein"></textarea>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Size</label>
+
+<select id="customerSize">
+
+<option value="">Select Size</option>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+<option value="XL">XL</option>
+<option value="XXL">XXL</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Quantity</label>
+
+<input
+type="number"
+id="customerQuantity"
+value="1"
+min="1"
+max="10">
+
+</div>
+
+
+<button
+class="whatsapp-button"
+onclick="copyOrder()">
+
+📋 Copy Order for WhatsApp
+
+</button>
+
+
+<button
+class="close-button"
+onclick="closeOrder()">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<footer id="footer">
+
+<p>72 Outfit</p>
+
+<p>Premium Fashion Store</p>
+
+<p>© 2026 72 Outfit</p>
+
+</footer>
+
+
+
+<script>
+
+var selectedProduct = "";
+var selectedPrice = 0;
+
+
+function openOrderForm(product, price) {
+
+selectedProduct = product;
+
+selectedPrice = price;
+
+document.getElementById("selectedProduct").innerHTML =
+product;
+
+document.getElementById("selectedPrice").innerHTML =
+price;
+
+document.getElementById("orderPopup").style.display =
+"flex";
+
+}
+
+
+function closeOrder() {
+
+document.getElementById("orderPopup").style.display =
+"none";
+
+}
+
+
+function copyOrder() {
+
+var name =
+document.getElementById("customerName").value.trim();
+
+var mobile =
+document.getElementById("customerMobile").value.trim();
+
+var address =
+document.getElementById("customerAddress").value.trim();
+
+var size =
+document.getElementById("customerSize").value;
+
+var quantity =
+document.getElementById("customerQuantity").value;
+
+
+if (name === "") {
+
+alert("Please apna naam likhein.");
+
+return;
+
+}
+
+
+if (mobile.length < 10) {
+
+alert("Please valid mobile number likhein.");
+
+return;
+
+}
+
+
+if (address === "") {
+
+alert("Please delivery address likhein.");
+
+return;
+
+}
+
+
+if (size === "") {
+
+alert("Please size select karein.");
+
+return;
+
+}
+
+
+var total =
+selectedPrice * Number(quantity);
+
+
+var message =
+"NEW ORDER - 72 OUTFIT\n\n" +
+
+"Product: " + selectedProduct + "\n" +
+
+"Price: ₹" + selectedPrice + "\n" +
+
+"Quantity: " + quantity + "\n" +
+
+"Size: " + size + "\n" +
+
+"Total: ₹" + total + "\n\n" +
+
+"Customer Name: " + name + "\n" +
+
+"Mobile: " + mobile + "\n" +
+
+"Address: " + address;
+
+
+if (navigator.clipboard &&
+navigator.clipboard.writeText) {
+
+navigator.clipboard.writeText(message)
+
+.then(function() {
+
+alert(
+"✅ Order copy ho gaya!\n\n" +
+"Ab WhatsApp kholo aur message Paste karke bhej do."
+);
+
+})
+
+.catch(function() {
+
+copyFallback(message);
+
+});
+
+} else {
+
+copyFallback(message);
+
+}
+
+}
+
+
+function copyFallback(text) {
+
+var textarea =
+document.createElement("textarea");
+
+textarea.value = text;
+
+textarea.style.position = "fixed";
+textarea.style.left = "-9999px";
+
+document.body.appendChild(textarea);
+
+textarea.focus();
+
+textarea.select();
+
+try {
+
+document.execCommand("copy");
+
+alert(
+"✅ Order copy ho gaya!\n\n" +
+"Ab WhatsApp kholo aur message Paste karke bhej do."
+);
+
+} catch (error) {
+
+alert(
+"Order copy nahi ho paya.\n" +
+"Order details screen par select karke copy kar sakte ho."
+);
+
+}
+
+document.body.removeChild(textarea);
+
+}
+
+</script>
+
+
+</body>
+
+</html>
